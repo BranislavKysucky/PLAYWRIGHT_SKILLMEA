@@ -1,0 +1,337 @@
+{
+  "config": {
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "C:\\Users\\brano\\Desktop\\PLAYWRIGHT_SKILLMEA\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "loginDescribe.spec.ts"
+    ],
+    "configFile": "C:\\Users\\brano\\Desktop\\PLAYWRIGHT_SKILLMEA\\playwright.config.ts",
+    "rootDir": "C:/Users/brano/Desktop/PLAYWRIGHT_SKILLMEA/tests",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 5
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "C:/Users/brano/Desktop/PLAYWRIGHT_SKILLMEA/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 5
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "C:/Users/brano/Desktop/PLAYWRIGHT_SKILLMEA/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "html",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "test-results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.62.1",
+    "workers": 8,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "loginDescribe.spec.ts",
+      "file": "loginDescribe.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Login",
+          "file": "loginDescribe.spec.ts",
+          "line": 8,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Succesful login",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 792,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-08-19T14:53:56.606Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "f44fc7c577907310bbac-08001eb0bb062a64a2f1",
+              "file": "loginDescribe.spec.ts",
+              "line": 15,
+              "column": 9
+            },
+            {
+              "title": "Cannot login with valid username and invalid password",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [
+                    {
+                      "type": "Test",
+                      "description": "This test will pass if the user is not able to loin with valid username and invalid password"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "failed",
+                      "duration": 5640,
+                      "error": {
+                        "message": "Error: Can not find login error message\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByText('Epic sadface: Username and password do not match any user in this service')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Can not find login error message with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByText('Epic sadface: Username and password do not match any user in this service')\u001b[22m\n",
+                        "stack": "Error: Can not find login error message\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByText('Epic sadface: Username and password do not match any user in this service')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Can not find login error message with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByText('Epic sadface: Username and password do not match any user in this service')\u001b[22m\n\n    at C:\\Users\\brano\\Desktop\\PLAYWRIGHT_SKILLMEA\\tests\\loginDescribe.spec.ts:45:104\n    at C:\\Users\\brano\\Desktop\\PLAYWRIGHT_SKILLMEA\\tests\\loginDescribe.spec.ts:44:9",
+                        "location": {
+                          "file": "C:\\Users\\brano\\Desktop\\PLAYWRIGHT_SKILLMEA\\tests\\loginDescribe.spec.ts",
+                          "column": 104,
+                          "line": 45
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 43 |\u001b[39m         \u001b[90m// pridanie test stepov\u001b[39m\n \u001b[90m 44 |\u001b[39m         \u001b[36mawait\u001b[39m test\u001b[33m.\u001b[39mstep(\u001b[32m'Verify invalid credentials error message'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 45 |\u001b[39m             \u001b[36mawait\u001b[39m expect(loginPage\u001b[33m.\u001b[39minvalidCredentialsErrorMessage\u001b[33m,\u001b[39m \u001b[32m'Can not find login error message'\u001b[39m)\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                                                        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 46 |\u001b[39m         })\u001b[33m;\u001b[39m\n \u001b[90m 47 |\u001b[39m\n \u001b[90m 48 |\u001b[39m         \u001b[90m//const loginPage = new LoginPage(page);\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\brano\\Desktop\\PLAYWRIGHT_SKILLMEA\\tests\\loginDescribe.spec.ts",
+                            "column": 104,
+                            "line": 45
+                          },
+                          "message": "Error: Can not find login error message\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByText('Epic sadface: Username and password do not match any user in this service')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Can not find login error message with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByText('Epic sadface: Username and password do not match any user in this service')\u001b[22m\n\n\n\u001b[0m \u001b[90m 43 |\u001b[39m         \u001b[90m// pridanie test stepov\u001b[39m\n \u001b[90m 44 |\u001b[39m         \u001b[36mawait\u001b[39m test\u001b[33m.\u001b[39mstep(\u001b[32m'Verify invalid credentials error message'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 45 |\u001b[39m             \u001b[36mawait\u001b[39m expect(loginPage\u001b[33m.\u001b[39minvalidCredentialsErrorMessage\u001b[33m,\u001b[39m \u001b[32m'Can not find login error message'\u001b[39m)\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                                                        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 46 |\u001b[39m         })\u001b[33m;\u001b[39m\n \u001b[90m 47 |\u001b[39m\n \u001b[90m 48 |\u001b[39m         \u001b[90m//const loginPage = new LoginPage(page);\u001b[39m\u001b[0m\n\u001b[2m    at C:\\Users\\brano\\Desktop\\PLAYWRIGHT_SKILLMEA\\tests\\loginDescribe.spec.ts:45:104\u001b[22m\n\u001b[2m    at C:\\Users\\brano\\Desktop\\PLAYWRIGHT_SKILLMEA\\tests\\loginDescribe.spec.ts:44:9\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Enter valid username",
+                          "duration": 84
+                        },
+                        {
+                          "title": "Enter invalid password",
+                          "duration": 18
+                        },
+                        {
+                          "title": "Click login button",
+                          "duration": 0
+                        },
+                        {
+                          "title": "Verify invalid credentials error message",
+                          "duration": 5030,
+                          "error": {
+                            "message": "Error: Can not find login error message\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByText('Epic sadface: Username and password do not match any user in this service')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Can not find login error message with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByText('Epic sadface: Username and password do not match any user in this service')\u001b[22m\n",
+                            "stack": "Error: Can not find login error message\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByText('Epic sadface: Username and password do not match any user in this service')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Can not find login error message with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByText('Epic sadface: Username and password do not match any user in this service')\u001b[22m\n\n    at C:\\Users\\brano\\Desktop\\PLAYWRIGHT_SKILLMEA\\tests\\loginDescribe.spec.ts:45:104\n    at C:\\Users\\brano\\Desktop\\PLAYWRIGHT_SKILLMEA\\tests\\loginDescribe.spec.ts:44:9",
+                            "location": {
+                              "file": "C:\\Users\\brano\\Desktop\\PLAYWRIGHT_SKILLMEA\\tests\\loginDescribe.spec.ts",
+                              "column": 104,
+                              "line": 45
+                            },
+                            "snippet": "\u001b[0m \u001b[90m 43 |\u001b[39m         \u001b[90m// pridanie test stepov\u001b[39m\n \u001b[90m 44 |\u001b[39m         \u001b[36mawait\u001b[39m test\u001b[33m.\u001b[39mstep(\u001b[32m'Verify invalid credentials error message'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 45 |\u001b[39m             \u001b[36mawait\u001b[39m expect(loginPage\u001b[33m.\u001b[39minvalidCredentialsErrorMessage\u001b[33m,\u001b[39m \u001b[32m'Can not find login error message'\u001b[39m)\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                                                        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 46 |\u001b[39m         })\u001b[33m;\u001b[39m\n \u001b[90m 47 |\u001b[39m\n \u001b[90m 48 |\u001b[39m         \u001b[90m//const loginPage = new LoginPage(page);\u001b[39m\u001b[0m"
+                          }
+                        }
+                      ],
+                      "startTime": "2026-08-19T14:53:56.623Z",
+                      "annotations": [
+                        {
+                          "type": "Test",
+                          "description": "This test will pass if the user is not able to loin with valid username and invalid password"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\brano\\Desktop\\PLAYWRIGHT_SKILLMEA\\test-results\\loginDescribe-Login-Cannot-a5b04-ername-and-invalid-password-chromium\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\brano\\Desktop\\PLAYWRIGHT_SKILLMEA\\tests\\loginDescribe.spec.ts",
+                        "column": 104,
+                        "line": 45
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "f44fc7c577907310bbac-5949897d9df13d376c45",
+              "file": "loginDescribe.spec.ts",
+              "line": 22,
+              "column": 9
+            },
+            {
+              "title": "Cannot login with invalid username and valid password",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 769,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-08-19T14:53:56.603Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "f44fc7c577907310bbac-d1f5f8e7ff9e6c3569d4",
+              "file": "loginDescribe.spec.ts",
+              "line": 56,
+              "column": 9
+            },
+            {
+              "title": "Cannot login with blanc fields",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 657,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-08-19T14:53:56.657Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "f44fc7c577907310bbac-0cc0955f524c41d0cae5",
+              "file": "loginDescribe.spec.ts",
+              "line": 65,
+              "column": 9
+            },
+            {
+              "title": "Cannot login with locked user",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 4,
+                      "status": "passed",
+                      "duration": 706,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-08-19T14:53:56.710Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "f44fc7c577907310bbac-38917095af7228c0d7f7",
+              "file": "loginDescribe.spec.ts",
+              "line": 72,
+              "column": 9
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-08-19T14:53:55.882Z",
+    "duration": 6762.865,
+    "expected": 4,
+    "skipped": 0,
+    "unexpected": 1,
+    "flaky": 0
+  }
+}

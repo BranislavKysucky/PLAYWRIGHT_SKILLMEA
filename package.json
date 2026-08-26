@@ -1,0 +1,26 @@
+{
+  "name": "playwright_skillmea",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+"scripts": {
+  "allTests": "playwright test",
+  "prodTests": "cross-env ENV=prod playwright test",
+  "localTests": "cross-env ENV=local playwright test"
+},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@playwright/test": "^1.62.1",
+    "@types/node": "^26.3.0",
+    "allure-commandline": "^2.43.0",
+    "allure-playwright": "^3.10.2",
+    "cross-env": "^10.1.0",
+    "typescript": "^7.0.2"
+  },
+  "dependencies": {
+    "dotenv": "^17.4.2"
+  }
+}

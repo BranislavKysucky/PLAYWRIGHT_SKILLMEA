@@ -1,0 +1,85 @@
+{
+  "cookies": [
+    {
+      "name": "_ga",
+      "value": "GA1.2.765573892.1787676961",
+      "domain": ".demoqa.com",
+      "path": "/",
+      "expires": 1822236960.652987,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_gid",
+      "value": "GA1.2.330886545.1787676961",
+      "domain": ".demoqa.com",
+      "path": "/",
+      "expires": 1787763360,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_gat_UA-109033876-1",
+      "value": "1",
+      "domain": ".demoqa.com",
+      "path": "/",
+      "expires": 1787677020,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "__eoi",
+      "value": "ID=b7cf6e351c02fcfd:T=1787676956:RT=1787676956:S=AA-AfjbVHqq2uYYS-CUaAHj2XTjM",
+      "domain": ".demoqa.com",
+      "path": "/",
+      "expires": 1803228956,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "token",
+      "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6Im1pY2hhbGQiLCJwYXNzd29yZCI6IlBAc3N3MHJkIzgkRSEiLCJpYXQiOjE3ODc2NzY5NTZ9.B0vyhSLYIEf3cXrKgjRkiO2TbiwJAnJ4dXy6JYW1No8",
+      "domain": "demoqa.com",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "expires",
+      "value": "2026-09-01T16%3A55%3A56.387Z",
+      "domain": "demoqa.com",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "userID",
+      "value": "3b9a938d-9f7d-4ced-aea5-57d57562a3f9",
+      "domain": "demoqa.com",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "userName",
+      "value": "michald",
+      "domain": "demoqa.com",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    }
+  ],
+  "origins": []
+}

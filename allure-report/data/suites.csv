@@ -1,0 +1,6 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","916","Cannot login with valid username and invalid password","chromium","2026-08-19","passed","2026-08-19","","login.spec.ts","",""
+"","740","Cannot login with blanc fields","chromium","2026-08-19","passed","2026-08-19","","login.spec.ts","",""
+"","917","Succesful login","chromium","2026-08-19","passed","2026-08-19","","login.spec.ts","",""
+"","860","Cannot login with invalid username and valid password","chromium","2026-08-19","passed","2026-08-19","","login.spec.ts","",""
+"","779","Cannot login with locked user","chromium","2026-08-19","passed","2026-08-19","","login.spec.ts","",""
