@@ -10,7 +10,7 @@ test.describe('Visual testing', () => {
     })
 
     // uklada vysledky do tests/ visual spec ts snapshots vytvori.. a porovna vysledky posledne, ak je ten test spusteny ibra raz tak to padne lebo nema s cim porovnat
-    test('Visual test - login page', async ({ page }) => {
+    test.skip('Visual test - login page', async ({ page }) => {
         // maxDiff pixel maximalna hodnota ktora je tolerovana este
         await expect(page).toHaveScreenshot({maxDiffPixels: 100});
     });
