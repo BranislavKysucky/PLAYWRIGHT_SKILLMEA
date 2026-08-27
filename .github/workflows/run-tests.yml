@@ -11,10 +11,6 @@ on:
 
 jobs:
   test:
-    strategy:
-      fail-fast: false
-      matrix:
-        shard: [1/4, 2/4, 3/4, 4/4]
     timeout-minutes: 60
     runs-on: ubuntu-latest
 
@@ -35,7 +31,7 @@ jobs:
         run: npx playwright install --with-deps
 
       - name: Run Playwright tests
-        run: SLACK_BOT_USER_OAUTH_TOKEN=${{ secrets.SLACK_BOT_USER_OAUTH_TOKEN }} npx playwright test --grep-invert "@api" --shard=${{ matrix.shard }} npx playwright test --grep-invert "@api"
+        run: npx playwright test
 
       - name: Upload Playwright report
         if: ${{ !cancelled() }}
