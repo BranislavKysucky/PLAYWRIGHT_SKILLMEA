@@ -3,11 +3,12 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-"scripts": {
-  "allTests": "playwright test",
-  "prodTests": "cross-env ENV=prod playwright test",
-  "localTests": "cross-env ENV=local playwright test"
-},
+  "scripts": {
+    "allTests": "playwright test",
+    "prodTests": "cross-env ENV=prod playwright test",
+    "localTests": "cross-env ENV=local playwright test",
+    "test:api": "playwright test --config=api.config.ts --project=chromium --grep @api --debug"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -21,6 +22,7 @@
     "typescript": "^7.0.2"
   },
   "dependencies": {
+    "@faker-js/faker": "^10.6.0",
     "dotenv": "^17.4.2"
   }
 }
